@@ -1,0 +1,52 @@
+.contact{
+    margin: 100px 0px 0px 0px;
+}
+.contact .container{
+    padding: 100px 300px;
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+.contact .container h2{
+    color: #147EFB;
+    margin: 20px 0px;
+}
+
+.contact .container .flex{
+    display: flex;
+    flex-direction: row;
+}
+
+.contact .container .flex .adress , .container .flex .email{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-left: 2px solid wheat;
+    padding-left: 30px;
+}
+
+
+.contact .container .flex img{
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.09);
+}
+.content{
+    margin: 30px;
+}
+
+@media screen and (max-width: 480px) {
+    .contact .container{
+        padding: 100px 30px;
+    }   
+    .contact .container .flex{
+        flex-direction: column;
+    } 
+    .contact .container .flex>div{
+        margin: 20px 0px;
+    }
+    .content{
+        margin: 10px;
+    }
+}

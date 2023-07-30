@@ -1,0 +1,31 @@
+.footer .container{
+    color: #fff;
+    padding: 50px 300px;
+    background-color: rgb(53, 53, 53);
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+.footer .container div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer .container div>a{
+    margin: 0px 10px;
+    position: relative;
+}
+.footer .container div>a:hover{
+    bottom:5px;
+}
+
+
+@media screen and (max-width: 480px) {
+    .footer .container{
+        padding: 50px 30px;
+        flex-direction: column;
+    }
+    .footer .container div{
+        margin-top: 20px;
+    } 
+}

@@ -1,0 +1,21 @@
+.portfolio .container{
+    padding: 100px 300px;
+}
+.portfolio h2{
+    margin: 10px 0px;
+    color: #147EFB;
+}
+
+.portfolio h4{
+    margin: 10px 0px;
+}
+
+.portfolio .projectscards{
+    margin: 40px 0px;
+}
+
+@media screen and (max-width: 480px) {
+    .portfolio .container{
+        padding: 100px 30px;
+    }
+  }

@@ -19,12 +19,12 @@ export default function Main() {
                         <p>Learnt Tech</p>
                         <div>
                         {
-                            a.map((e)=>{
-                                return <span><img src={e} alt="Not Found" height="50px"/></span>
+                            a.map((e,i)=>{
+                                return <span key={i}><img src={e} alt="Not Found" height="50px"/></span>
                             })
                         }{
-                            a.map((e)=>{
-                                return <span><img src={e} alt="Not Found" height="50px"/></span>
+                            a.map((e,i)=>{
+                                return <span key={i}><img src={e} alt="Not Found" height="50px"/></span>
                             })
 
                         }

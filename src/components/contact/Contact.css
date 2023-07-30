@@ -19,8 +19,6 @@
 .contact .container .flex .adress , .container .flex .email{
     display: flex;
     align-items: center;
-    justify-content: center;
-
     border-left: 2px solid wheat;
     padding-left: 30px;
 }
@@ -46,7 +44,7 @@
     .contact .container .flex>div{
         margin: 20px 0px;
     }
-    .content{
+    .contact .content{
         margin: 10px;
     }
 }

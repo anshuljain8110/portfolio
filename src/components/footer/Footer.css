@@ -1,6 +1,6 @@
 .footer .container{
     color: #fff;
-    padding: 50px 300px;
+    padding: 50px 20vw;
     background-color: rgb(53, 53, 53);
     display: flex;
     align-items: center;
@@ -20,12 +20,17 @@
 }
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 650px) {
     .footer .container{
-        padding: 50px 30px;
-        flex-direction: column;
+        padding: 50px 8vw;
+        /* flex-direction: column; */
     }
     .footer .container div{
         margin-top: 20px;
     } 
+}
+@media screen and (max-width: 500px) {
+    .footer .container{
+        flex-direction: column;
+    }
 }

@@ -10,7 +10,7 @@ export default function Contact() {
                     <img src="svg/email.svg" alt="Not Found" height="60px"/>
                     <div className='content'>
                         <h3>Location</h3>
-                        <p>Ambala, Haryana, India (133205)</p>
+                        <p>Ambala,Haryana,India (133205)</p>
                     </div>
                 </div>
                 <div className="email">

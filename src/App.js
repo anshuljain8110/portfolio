@@ -4,15 +4,22 @@ import Footer from './components/footer/Footer';
 import Main from './components/main/Main';
 import Navbar from './components/navbar/Navbar';
 import Portfolio from './components/portfolio/Portfolio';
+import { useState } from 'react';
 function App() {
+  const [ref,setref]=useState(false)
+  const toggle=()=>{
+    if(ref===true){
+      setref(false)
+    }
+  }
   return (
-    <>
-    <Navbar/>
+    <div onClick={()=>{toggle()}}>
+    <Navbar re={ref} setre={setref}/>
     <Main/>
     <Portfolio/>
     <Contact/>
     <Footer/>
-    </>
+    </div>
   );
 }
 

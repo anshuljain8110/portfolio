@@ -8,8 +8,8 @@ export default function Main() {
                 <div className="container">
                     <div className='upper'>
                         <div className='intro'>
-                            <h1>Anshul Jain</h1>
-                            <p>Hi, I am anshul jain a critical thinker coder wanted to become a backend developer</p>
+                            <h1>Full Stack Web<br/>Developer👋</h1>
+                            <p>Hi, I am Anshul Jain a passionate critical thinker coder currently pursuing B.tech CSE</p>
                         </div>
                         <div className="myimage">
                             <img src="images/IMG_20230117_101500_761.jpg" alt="Not Found" height="400px" />

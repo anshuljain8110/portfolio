@@ -1,5 +1,5 @@
 .portfolio .container{
-    padding: 100px 300px;
+    padding: 100px 20vw;
 }
 .portfolio h2{
     margin: 10px 0px;
@@ -14,8 +14,8 @@
     margin: 40px 0px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 650px) {
     .portfolio .container{
-        padding: 100px 30px;
+        padding: 100px 8vw;
     }
   }

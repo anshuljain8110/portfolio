@@ -1,3 +1,6 @@
+*{
+    /* border: 2px solid red; */
+}
 nav{
     background-color: #fff;
     position: sticky;
@@ -37,13 +40,13 @@ nav{
 }
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1000px) {
     .routes button{
         display: inline;
     }
     .routes div{
         border-radius: 5px;
-        padding: 20px;
+        padding: 20px 0px;
         background-color: #fff;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         position: fixed;
@@ -52,11 +55,14 @@ nav{
         flex-direction: column;
         transition: all 0.3s;
         opacity: 0;
+        background-color: rgb(255, 255, 255);
     }
     .routes div>*{
+        padding: 10px 20px;
         border-radius: 5px;
-        margin: 3px 8px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        margin: 5px 15px;
+        border: 2px solid rgba(0, 0, 0, 0.331);
+        /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); */
     }
     nav{
         padding: 25px 30px;

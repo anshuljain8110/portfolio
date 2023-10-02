@@ -33,7 +33,14 @@
     margin: 0px 50px 0px 0px;
 }
 
-.main .container .upper img{
+.upper .intro a img{
+    padding: 20px 20px 0px 0px;
+    filter: invert(100%);
+    color: aqua;
+}
+
+
+.main .container .upper .myimage{
     border-left: 5px solid wheat;
     border-top: 10px solid wheat;
     border-right:15px solid wheat;
@@ -107,15 +114,18 @@
         align-items: center;
         justify-content: center;
     }
+    .main .container .upper .mainlinks{
+        display: none;
+    }
     .main .container .upper h1{
         margin: 10px 0px;
         font-size: 40px;
     }
-    .main .upper img{
+    .main .upper .myimage{
         height: 300px;
         width: 230px;
     }
-    .main .container .upper .myimage{
+    .main .container .upper .mainimagediv{
         order: -1;
     }
     .main .upper h1{

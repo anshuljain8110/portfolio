@@ -1,13 +1,10 @@
-.contact{
-    margin: 100px 0px 0px 0px;
-}
 .contact .container{
     padding: 100px 20vw;
     background-color: rgba(0, 0, 0, 0.02);
 }
 
 .contact .container h2{
-    color: #147EFB;
+    color: rgb(177, 115, 0);
     margin: 20px 0px;
 }
 

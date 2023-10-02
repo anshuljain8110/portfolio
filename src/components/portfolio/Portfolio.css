@@ -3,19 +3,108 @@
 }
 .portfolio h2{
     margin: 10px 0px;
-    color: #147EFB;
+    color: rgb(177, 115, 0);
 }
+
+/* .portfolio .heading{
+    width: 850px;
+    display: inline-flex;
+    flex-direction: column;
+} */
 
 .portfolio h4{
     margin: 10px 0px;
 }
 
 .portfolio .projectscards{
-    margin: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-@media screen and (max-width: 650px) {
+.portfolio .singleproject{
+    
+    margin: 50px 0px;
+    box-shadow: 0px 0px 15px rgba(184, 121, 5, 0.413);
+    border-radius: 20px;
+    display: inline-flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.portfolio .singleproject .mainimage{
+    border: 2px solid rgb(230, 173, 68);
+    border-radius:20px;
+    
+}
+
+.portfolio .singleproject .projectcontent{
+    width: 400 px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.portfolio .singleproject .projectcontent h3{
+    font-weight: 900;
+    font-size: 25px
+}
+
+.portfolio .singleproject .projectcontent p{
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: bold;
+    font-size: 17px;
+    margin: 20px 0px;
+    text-align: left;
+}
+
+.portfolio .singleproject .projectcontent .tech div{
+    /* display: flex; */
+    display: inline;
+    margin: 20px;
+    padding: 5px;
+    box-shadow: 0px 0px 15px rgba(184, 121, 5, 0.413);
+    border-radius: 5px;
+}
+
+.portfolio .singleproject .projectcontent .links{
+    display: flex;
+}
+
+.portfolio .singleproject .projectcontent .links a{
+    margin: 20px 20px 0px;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+}
+
+.portfolio .singleproject .projectcontent .links img{
+    margin: 0px 8px;
+}
+
+@media screen and (max-width: 900px){
+    .singleproject .mainimage{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 750px) {
     .portfolio .container{
         padding: 100px 8vw;
     }
+    .singleproject{
+        flex-direction: column;
+    }
+    .singleproject .mainimage{
+        width: 100%;
+    }
+    
   }

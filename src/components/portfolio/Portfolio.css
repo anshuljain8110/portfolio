@@ -64,7 +64,7 @@
 .portfolio .singleproject .projectcontent .tech div{
     /* display: flex; */
     display: inline;
-    margin: 20px;
+    margin: 20px 8px;
     padding: 5px;
     box-shadow: 0px 0px 15px rgba(184, 121, 5, 0.413);
     border-radius: 5px;

@@ -11,8 +11,8 @@ export default function Portfolio() {
                 </div>
                 <div className="projectscards">
                     {
-                        projects.map((e) => {
-                            return <div className='singleproject'>
+                        projects.map((e,i) => {
+                            return <div className='singleproject' style={i % 2 !== 0 ? { flexDirection: "row-reverse" } : {}}>
                                 <div>
                                     <img src={process.env.PUBLIC_URL + e.image} className='mainimage' alt="here"height="100%" width="450px"/>
                                 </div>
@@ -25,8 +25,8 @@ export default function Portfolio() {
                                         })}
                                     </div>
                                     <div className='links'>
-                                        <a href={e.code} target='_blank' rel="noreferrer"><img src={process.env.PUBLIC_URL + "/svg/github.svg"} alt="none" height="20px"/>Code</a>
-                                        <a href={e.link} target='_blank' rel="noreferrer"><img src={process.env.PUBLIC_URL + "/svg/link.svg"} alt="none" height="30px"/>link</a>
+                                        {e.code.length===0?"":<a href={e.code} target='_blank' rel="noreferrer"><img src={process.env.PUBLIC_URL + "/svg/github.svg"} alt="none" height="20px"/>Code</a>}
+                                        {e.link.length===0?"":<a href={e.link} target='_blank' rel="noreferrer"><img src={process.env.PUBLIC_URL + "/svg/link.svg"} alt="none" height="30px"/>link</a>}
                                     </div>
                                 </div>
                             </div>

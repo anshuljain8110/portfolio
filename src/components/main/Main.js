@@ -9,7 +9,7 @@ export default function Main() {
                     <div className='upper'>
                         <div className='intro'>
                             <h1>Full Stack Web Developer👋</h1>
-                            <p>Hi, I am Anshul Jain a passionate, critical thinker coder and a M.E.R.N Stack magician 🪄</p>
+                            <p>"Hey! I'm Anshul Jain, your friendly Programmer and a M.E.R.N Stack magician🪄. I love turning ideas into reality with a sprinkle of coding magic! ✨"</p>
                             <div className='mainlinks'>
                             <a href="https://github.com/anshuljain8110" target='_blank' rel="noreferrer"><img src={process.env.PUBLIC_URL + "/svg/github142.svg"} alt="Not Found" height="27px"/></a>
                             <a href="https://leetcode.com/anshuljain8110/" target='_blank' rel="noreferrer"><img src={process.env.PUBLIC_URL + "/svg/leetcode.svg"} alt="Not Found" height="27px"/></a>

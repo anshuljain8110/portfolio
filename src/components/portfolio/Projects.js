@@ -3,7 +3,7 @@ let a=[
         "image":"/images/tic-tac-toe.png",
         "name":"Tic-Tac-Toe Game",
         "link":"https://anshuljain8110.github.io/tic-tac-toe/",
-        "content":"A game WebApp that allows users to perform many actions like (undo,redo,restart) along with automatic winner detection and error handlers",
+        "content":"A web application designed to elevate the classic game to new heights. Discover the perfect blend of simplicity and sophistication with features like undo, redo, restart, automatic winner detection, and robust error handling.",
         "code":"https://github.com/anshuljain8110/tic-tac-toe",
         "techstack":["React","CSS"]
     },
@@ -11,9 +11,25 @@ let a=[
         "image":"/images/attendance.jpg",
         "name":"Attendance Manager",
         "link":"https://anshuljain8110.github.io/attendence_management/",
-        "content":"A Dailyuse WebApp for students to organise their attendance. the app uses local storage for more reliability and also works without internet",
+        "content":"Introducing the StudentAttendance Organizer, a user-friendly and reliable web application designed to simplify the organization of student attendance. This Daily-Use WebApp is tailored for students, ensuring seamless attendance tracking and management. ",
         "code":"https://github.com/anshuljain8110/attendence_management/tree/master",
         "techstack":["React","BootStrap"]
+    },
+    {
+        "image":"/images/dailydose.jpg",
+        "name":"Daily Dose (NewsAPI)",
+        "link":"",
+        "content":"Daily Dose, your go-to source for the latest news updated every 24 hours! Stay informed and engaged with the world around you through our meticulously curated news WebApp, powered by the robust and comprehensive NewsAPI",
+        "code":"https://github.com/anshuljain8110/dailydose/",
+        "techstack":["React","API"]
+    },
+    {
+        "image":"/images/portfolio_maker.jpg",
+        "name":"Portfolio Maker (FULL STACK)",
+        "link":"",
+        "content":"Explore the Full Stack Portfolio Maker – Your primary tool for crafting professional portfolios. Additionally, recruiters can efficiently search and discover profiles, simplifying the hiring process. Elevate your personal brand and streamline recruitment effortlessly with this versatile web app.",
+        "code":"https://github.com/anshuljain8110/portfolio_maker/",
+        "techstack":["Postman","Flask","mongoDB"]
     }
 ]
 export default a

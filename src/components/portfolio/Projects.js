@@ -26,7 +26,7 @@ let a=[
     {
         "image":"/images/portfolio_maker.jpg",
         "name":"Portfolio Maker (FULL STACK)",
-        "link":"",
+        "link":"https://www.youtube.com/watch?v=vVCdBHZSqzc",
         "content":"Explore the Full Stack Portfolio Maker – Your primary tool for crafting professional portfolios. Additionally, recruiters can efficiently search and discover profiles, simplifying the hiring process. Elevate your personal brand and streamline recruitment effortlessly with this versatile web app.",
         "code":"https://github.com/anshuljain8110/portfolio_maker/",
         "techstack":["Postman","Flask","mongoDB"]

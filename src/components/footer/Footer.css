@@ -11,6 +11,11 @@
     align-items: center;
     justify-content: center;
 }
+
+.footer .container h3{
+    font-size: 18px;
+}
+
 .footer .container div>a{
     margin: 0px 10px;
     position: relative;

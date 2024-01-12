@@ -14,6 +14,31 @@
 
 .portfolio h4{
     margin: 10px 0px;
+    color: rgba(0, 0, 0, 0.689);
+    font-weight: 800;
+    font-size: 1.1rem;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+/* Style the label to resemble a button */
+label {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    color: #000000;
+    cursor: pointer;
+    border-radius: 20px;
+    margin: 5px 10px;
+    border: 2px solid wheat;
+
+}
+
+/* Style for checked state */
+input[type="radio"]:checked + label {
+    background-color: rgb(254, 207, 120);
 }
 
 .portfolio .projectscards{
@@ -21,11 +46,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    /* overflow: hidden; */
 }
 
 .portfolio .singleproject{
     
-    margin: 50px 0px;
+    margin: 30px 0px;
     box-shadow: 0px 0px 15px rgba(184, 121, 5, 0.413);
     border-radius: 20px;
     display: inline-flex;
@@ -59,6 +85,7 @@
     font-size: 17px;
     margin: 20px 0px;
     text-align: center;
+    padding: 0px 20px;
 }
 
 .portfolio .singleproject .projectcontent .tech div{
@@ -107,6 +134,9 @@
     }
     .singleproject .mainimage{
         width: 100%;
+    }
+    .portfolio .singleproject .projectcontent p{
+        padding: 0px;
     }
     
   }

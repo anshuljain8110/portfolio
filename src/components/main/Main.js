@@ -20,15 +20,15 @@ export default function Main() {
                         </div>
                     </div>
                     <div className='lower'>
-                        <p>Learnt Tech</p>
+                        <p>Tech Stack</p>
                         <div>
                         {
                             a.map((e,i)=>{
-                                return <span key={i}><img src={process.env.PUBLIC_URL + e} alt="Not Found" height="50px"/></span>
+                                return <span key={i}><img src={process.env.PUBLIC_URL+"/svg/"+e+".svg"} alt={e} height="50px"/></span>
                             })
                         }{
                             a.map((e,i)=>{
-                                return <span key={i}><img src={process.env.PUBLIC_URL + e} alt="Not Found" height="50px"/></span>
+                                return <span key={i}><img src={process.env.PUBLIC_URL +"/svg/"+e+".svg"} alt="Not Found" height="50px"/></span>
                             })
 
                         }

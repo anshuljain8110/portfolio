@@ -90,7 +90,7 @@
     background-color: white;
     border-radius: 50%;
     position: relative;
-    animation: slide 15s linear infinite;
+    animation: slide 20s linear infinite;
 }
 
 @keyframes slide{
@@ -98,7 +98,7 @@
         left: 0;
     }
     to{
-        left: -947px;
+        left: -1205px;
     }
 }
 

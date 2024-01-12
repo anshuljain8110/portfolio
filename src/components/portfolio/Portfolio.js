@@ -1,38 +1,43 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Portfolio.css"
 import projects from "./Projects"
+import SingleCard from './SingleCard'
+import hackathon from './Hackathon'
+import problemsolving from './ProblemSolving'
+import mobile from './Mobile'
 export default function Portfolio() {
+    const [radio,setradio] = useState(1)
     return (
         <section className='portfolio' id='projects'>
             <div className="container">
                 <div className="heading">
-                    <h2>PROJECTS ☺️</h2>
-                    <h4>Each project is a unique building block towards better programming</h4>
+                    <h2>Projects ☺️</h2>
+                    <h4>Transforming ideas into innovation, one project at a time – where passion meets proficiency.</h4>
                 </div>
-                <div className="projectscards">
-                    {
-                        projects.map((e,i) => {
-                            return <div className='singleproject' style={i % 2 !== 0 ? { flexDirection: "row-reverse" } : {}}>
-                                <div>
-                                    <img src={process.env.PUBLIC_URL + e.image} className='mainimage' alt="here"height="100%" width="450px"/>
-                                </div>
-                                <div className='projectcontent' style={{marginLeft:"20px"}}>
-                                    <h3>{e.name}</h3>
-                                    <div className='tech'>
-                                    <p>{e.content}</p>
-                                        {e.techstack.map((e)=>{
-                                            return <div>{e}</div>
-                                        })}
-                                    </div>
-                                    <div className='links'>
-                                        {e.code.length===0?"":<a href={e.code} target='_blank' rel="noreferrer"><img src={process.env.PUBLIC_URL + "/svg/github.svg"} alt="none" height="20px"/>Code</a>}
-                                        {e.link.length===0?"":<a href={e.link} target='_blank' rel="noreferrer"><img src={process.env.PUBLIC_URL + "/svg/link.svg"} alt="none" height="30px"/>link</a>}
-                                    </div>
-                                </div>
-                            </div>
-                        })
-                    }
+
+                <div className='buttons'>
+                    
+                    <input type="radio" name='experiece' id='prjects' defaultChecked onChange={()=>{setradio(1)}}/>
+                    <label htmlFor="prjects">Web Apps</label>
+
+                    <input type="radio" name='experiece' id='android' onChange={()=>{setradio(2)}}/>
+                    <label htmlFor="android">Mobile Apps</label>
+
+                    <input type="radio" name='experiece' id='intership' onClick={()=>{setradio(4)}}/>
+                    <label htmlFor="intership">Problem Solving</label>
+
+                    <input type="radio" name='experiece' id='hackathon' onChange={()=>{setradio(3)}} />
+                    <label htmlFor="hackathon">Hackathons & Internships</label>
+
                 </div>
+
+                <div className='selected'>
+                {radio===1?<SingleCard projects={projects}/>:""}
+                {radio===2?<SingleCard projects={mobile}/>:""}
+                {radio===3?<SingleCard projects={hackathon}/>:""}
+                {radio===4?<SingleCard projects={problemsolving}/>:""}
+                </div>
+                
             </div>
         </section>
     )

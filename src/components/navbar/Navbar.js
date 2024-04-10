@@ -17,9 +17,9 @@ export default function Navbar({re,setre}){
         <div className='routes'>
           <button onClick={()=>{setre(!re)}}><img src={process.env.PUBLIC_URL + "/svg/menu.svg"} alt='Not Found' height="25px"/></button>
           <div style={re ? { right: "5px", opacity: "1" } : {}}>
-            <Link to="/" onClick={() => scrollToSection('home')}>Home</Link>
-            <Link to="/" onClick={() => scrollToSection('projects')}>Projects</Link>
-            <Link to="/" onClick={() => scrollToSection('contact')}>Contact</Link>
+            <Link to="/portfolio" onClick={() => scrollToSection('home')}>Home</Link>
+            <Link to="/portfolio" onClick={() => scrollToSection('projects')}>Projects</Link>
+            <Link to="/portfolio" onClick={() => scrollToSection('contact')}>Contact</Link>
             <Link to="/blog">Blogs</Link>
           </div>
         </div>  

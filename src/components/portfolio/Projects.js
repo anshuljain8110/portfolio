@@ -26,9 +26,15 @@ let a=[
     {
         "image":"/images/portfolio_maker.jpg",
         "name":"Portfolio Maker (FULL STACK)",
+<<<<<<< HEAD
         "link":"",
         "content":"Explore the Full Stack Portfolio Maker – Your primary tool for crafting professional portfolios. Additionally, recruiters can efficiently search and discover profiles, simplifying the hiring process. Elevate your personal brand and streamline recruitment effortlessly with this versatile web app.",
         "code":"",
+=======
+        "link":"https://www.yzc",
+        "content":"Explore the Full Stack Portfolio Maker – Your primary tool for crafting professional portfolios. Additionally, recruiters can efficiently search and discover profiles, simplifying the hiring process. Elevate your personal brand and streamline recruitment effortlessly with this versatile web app.",
+        "code":"httaker/",
+>>>>>>> a3c3a2c35ff53ba8a99df4425f08e3af8ac26d30
         "techstack":["Postman","Flask","mongoDB"]
     }
 ]

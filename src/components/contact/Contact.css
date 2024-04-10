@@ -27,6 +27,17 @@
     border-radius: 50%;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.09);
 }
+
+.contact .container .flex a{
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact .container .flex a:hover{
+    color: blue;
+}
+
 .content{
     margin: 30px;
 }

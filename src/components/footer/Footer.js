@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <section className='footer'>
         <div className='container'>
-            <h3>Copyright 2023 All rights reserved</h3>
+            <h3>Copyright 2024 All rights reserved</h3>
             <div>
                 {/* <a href="https://t.me/anshuljain8110/" target='_blank' rel="noreferrer"><img src={process.env.PUBLIC_URL + "/svg/telegram.svg"} alt="Not Found" height="40px"/></a> */}
                 <a href="https://leetcode.com/anshuljain8110" target='_blank' rel="noreferrer"><img src={process.env.PUBLIC_URL + "/svg/leetcode.svg"} alt="Not Found" height="27px"/></a>

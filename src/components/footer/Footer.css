@@ -19,9 +19,10 @@
 .footer .container div>a{
     margin: 0px 10px;
     position: relative;
+    transition: scale 0.3s ease;
 }
 .footer .container div>a:hover{
-    bottom:5px;
+    scale: 1.2;
 }
 
 

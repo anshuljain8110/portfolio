@@ -1,26 +1,26 @@
+import { React } from 'react';
 import './App.css';
-import Contact from './components/contact/Contact';
-import Footer from './components/footer/Footer';
-import Main from './components/main/Main';
-import Navbar from './components/navbar/Navbar';
-import Portfolio from './components/portfolio/Portfolio';
-// import Chatbox from './components/chatbox/Chatbox'
-import { useState } from 'react';
-function App() {
-  const [ref,setref]=useState(false)
-  const toggle=()=>{
-    if(ref===true){
-      setref(false)
-    }
+import Blog from './components/blogs/Blog';
+import Hero from './components/hero/Hero';
+import {createBrowserRouter,RouterProvider} from "react-router-dom";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: (<Hero/>)
+  },
+  {
+    path: "/blog",
+    element: (<Blog/>)
   }
+])
+
+
+function App() {
+
   return (
-    <div onClick={()=>{toggle()}}>
-    <Navbar re={ref} setre={setref}/>
-    <Main/>
-    <Portfolio/>
-    <Contact/>
-    <Footer/>
-    {/* <Chatbox/> */}
+    <div>
+      <RouterProvider router={router} />
     </div>
   );
 }

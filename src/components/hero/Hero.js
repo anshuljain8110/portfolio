@@ -13,13 +13,15 @@ export default function Hero() {
     }
   }
     return (
-      <div onClick={()=>{toggle()}}>
-      <Navbar re={ref} setre={setref}/>
+      <div className='font-mono transition-all' onClick={()=>{toggle()}}>
+      <Navbar/>
       <Main/>
+      <hr className='h-px border-0 bg-orangePrimary' />
       <Portfolio/>
+      <hr className='h-px border-0 bg-orangePrimary' />
       <Contact/>
+      <hr className='h-px border-0 bg-orangePrimary' />
       <Footer/>
-      {/* <Chatbox/> */}
       </div>
     );
 }

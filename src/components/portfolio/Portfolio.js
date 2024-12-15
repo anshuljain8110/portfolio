@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { motion } from 'framer-motion'
 import projects from "./Projects";
 import SingleCard from "./SingleCard";
 import hackathon from "./Hackathon";
@@ -20,15 +20,19 @@ export default function Portfolio() {
         xl:px-64 xl:py-32"
       >
         <div className="">
-          <h2 className="text-yellow-500 dark:text-orangePrimary text-6xl font-semibold">
+          <h2
+            className="text-yellow-500 dark:text-orangePrimary text-6xl font-semibold">
             {"Projects".split("").map((e, i) => {
               return (
-                <span
-                  key={i}
-                  className=" inline-block  duration-300 hover:duration-300 ease-in-out md:hover:scale-y-150 md:hover:scale-x-110 md:hover:relative md:hover:bottom-3"
+                <motion.span
+                animate={{rotate:[-10,10,-10],scale:[1],y:[0]}}
+                transition={{duration:1,repeat:Infinity,repeatType:'loop'}}
+                key={i}
+                style={{ display: 'inline-block' }}
+                whileHover={{ scale: 1.5,y:-5, transition: { duration: 0.2 } }}
                 >
                   {e}
-                </span>
+                </motion.span>
               );
             })}
           </h2>
@@ -50,9 +54,8 @@ export default function Portfolio() {
             }}
           />
           <label
-            className={`${labelDesign} ${
-              radio === 1 ? "dark:bg-orangePrimary bg-yellow-400" : ""
-            }`}
+            className={`${labelDesign} ${radio === 1 ? "dark:bg-orangePrimary bg-yellow-400" : ""
+              }`}
             htmlFor="prjects"
           >
             Web Apps
@@ -68,9 +71,8 @@ export default function Portfolio() {
             }}
           />
           <label
-            className={`${labelDesign} ${
-              radio === 2 ? "dark:bg-orangePrimary bg-yellow-400" : ""
-            }`}
+            className={`${labelDesign} ${radio === 2 ? "dark:bg-orangePrimary bg-yellow-400" : ""
+              }`}
             htmlFor="android"
           >
             Mobile Apps
@@ -86,9 +88,8 @@ export default function Portfolio() {
             }}
           />
           <label
-            className={`${labelDesign} ${
-              radio === 4 ? "dark:bg-orangePrimary bg-yellow-400" : ""
-            }`}
+            className={`${labelDesign} ${radio === 4 ? "dark:bg-orangePrimary bg-yellow-400" : ""
+              }`}
             htmlFor="intership"
           >
             Problem Solving
@@ -104,9 +105,8 @@ export default function Portfolio() {
             }}
           />
           <label
-            className={`${labelDesign} ${
-              radio === 3 ? "dark:bg-orangePrimary bg-yellow-400" : ""
-            }`}
+            className={`${labelDesign} ${radio === 3 ? "dark:bg-orangePrimary bg-yellow-400" : ""
+              }`}
             htmlFor="hackathon"
           >
             Hackathons & Internships
@@ -144,19 +144,19 @@ function CommingSoon() {
   return (
     <div class="border border-orangePrimary mt-16 shadow rounded-md p-4 max-w-sm w-full mx-auto">
       <h2 className="text-center dark:text-white my-2 text-2xl">New Projects Comming Soon 😁</h2>
-  <div class="animate-pulse flex space-x-4">
-    <div class="rounded-full bg-slate-700 h-10 w-10"></div>
-    <div class="flex-1 space-y-6 py-1">
-      <div class="h-2 bg-slate-700 rounded"></div>
-      <div class="space-y-3">
-        <div class="grid grid-cols-3 gap-4">
-          <div class="h-2 bg-slate-700 rounded col-span-2"></div>
-          <div class="h-2 bg-slate-700 rounded col-span-1"></div>
+      <div class="animate-pulse flex space-x-4">
+        <div class="rounded-full bg-slate-700 h-10 w-10"></div>
+        <div class="flex-1 space-y-6 py-1">
+          <div class="h-2 bg-slate-700 rounded"></div>
+          <div class="space-y-3">
+            <div class="grid grid-cols-3 gap-4">
+              <div class="h-2 bg-slate-700 rounded col-span-2"></div>
+              <div class="h-2 bg-slate-700 rounded col-span-1"></div>
+            </div>
+            <div class="h-2 bg-slate-700 rounded"></div>
+          </div>
         </div>
-        <div class="h-2 bg-slate-700 rounded"></div>
       </div>
     </div>
-  </div>
-</div>
   );
 }

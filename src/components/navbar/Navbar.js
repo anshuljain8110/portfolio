@@ -1,9 +1,10 @@
 import React, { useContext, useState } from "react";
 import { Data } from "../../context/Userdata";
 import { Link } from "react-router-dom";
+import { motion } from 'framer-motion'
 
 export default function Navbar() {
-  const data = useContext(Data);
+  // const data = useContext(Data);
   const [burger, setBurger] = useState(false);
 
   const links =
@@ -17,7 +18,9 @@ export default function Navbar() {
   };
 
   return (
-    <div className="sticky top-1 z-20">
+    <div
+    
+    className="sticky top-1 z-20">
       <nav className="absolute text-white top-4 right-4 ">
         <button
           className="bbttnn rounded-full bg-yellowPrimary p-2 h-20 w-20 relative"
@@ -42,10 +45,11 @@ export default function Navbar() {
           ></span>
         </button>
       </nav>
-      <div
-        className={`fixed text-white bg-yellowPrimary rounded-bl-full h-[40vh] w-[40vh] lg:h-[30vw] lg:w-[30vw] duration-500 transition-all ${
-          burger ? " right-0 top-0 " : " -right-full "
-        }`}
+      
+      <motion.div
+      initial={{x:500,y:500}}
+      animate={{x:burger?0:500,y:burger?0:-500}} 
+        className={`fixed right-0 top-0 text-white bg-yellowPrimary rounded-bl-full h-[40vh] w-[40vh] lg:h-[30vw] lg:w-[30vw]`}
       >
         <div className=" flex flex-col align-center justify-center pl-16 pt-16 xl:pl-32 xl:pt-32">
           <Link
@@ -76,7 +80,7 @@ export default function Navbar() {
             Theme
           </button> */}
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

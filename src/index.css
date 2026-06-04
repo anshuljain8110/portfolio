@@ -4,7 +4,16 @@
 body * {
     @apply transition-colors duration-300;
 }
-body{
+*{
+    cursor:url(../public/images/hand.png) 12 12 , auto;
+}
+a{
+    cursor:url(../public/images/hand.png) 12 12 , auto;
+}
+button{
+    cursor:url(../public/images/hand.png) 12 12 , auto;
+}
+label{
     cursor:url(../public/images/hand.png) 12 12 , auto;
 }
 .bbttnn{

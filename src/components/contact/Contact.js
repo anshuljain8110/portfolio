@@ -15,7 +15,7 @@ export default function Contact() {
             return (
               <span
                 key={i}
-                className=" inline-block  duration-300 ease-in-out md:hover:scale-y-150 relative hover:bottom-3 md:hover:scale-x-110 "
+                className=" inline-block"
               >
                 {e}
               </span>

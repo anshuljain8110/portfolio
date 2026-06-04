@@ -10,7 +10,7 @@ export default function Footer() {
         md:flex-row
         lg:px-32
         xl:px-64'>
-            <h3 className=' text-white text-2xl font-semibold'>Copyright 2024 All rights reserved</h3>
+            <h3 className=' text-white text-2xl font-semibold'>Copyright 2026 All rights reserved</h3>
             <div className='flex'>
                 {/* <a href="https://t.me/anshuljain8110/" target='_blank' rel="noreferrer"><img src={process.env.PUBLIC_URL + "/svg/telegram.svg"} alt="Not Found" height="40px"/></a> */}
                 <a href="https://leetcode.com/anshuljain8110" target='_blank' rel="noreferrer"><img className={linksTailwind} src={process.env.PUBLIC_URL + "/svg/leetcode.svg"} alt="Not Found" height="27px"/></a>

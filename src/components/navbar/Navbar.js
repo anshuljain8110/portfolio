@@ -1,5 +1,4 @@
-import React, { useContext, useState } from "react";
-import { Data } from "../../context/Userdata";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from 'framer-motion'
 
@@ -73,12 +72,12 @@ export default function Navbar() {
           >
             Contact
           </Link>
-          <Link className={links} to="/blog">
+          {/* <Link className={links} to="/blog">
             Blogs
+          </Link> */}
+          <Link className={links} target="_blank" to="https://drive.google.com/drive/folders/1DYOKra4gmNS1mdTE0TpPoPF4dQqLssNP?usp=sharing">
+            Resume
           </Link>
-          {/* <button className={links} onClick={() => data.setTheme(!data.theme)}>
-            Theme
-          </button> */}
         </div>
       </motion.div>
     </div>

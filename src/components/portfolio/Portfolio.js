@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { motion } from 'framer-motion'
 import projects from "./Projects";
 import SingleCard from "./SingleCard";
 import hackathon from "./Hackathon";
@@ -24,15 +23,12 @@ export default function Portfolio() {
             className="text-yellow-500 dark:text-orangePrimary text-6xl font-semibold">
             {"Projects".split("").map((e, i) => {
               return (
-                <motion.span
-                animate={{rotate:[-10,10,-10],scale:[1],y:[0]}}
-                transition={{duration:1,repeat:Infinity,repeatType:'loop'}}
+                <span
                 key={i}
-                style={{ display: 'inline-block' }}
-                whileHover={{ scale: 1.5,y:-5, transition: { duration: 0.2 } }}
+                className=" inline-block"
                 >
                   {e}
-                </motion.span>
+                </span>
               );
             })}
           </h2>
@@ -70,13 +66,13 @@ export default function Portfolio() {
               setradio(2);
             }}
           />
-          <label
+          {/* <label
             className={`${labelDesign} ${radio === 2 ? "dark:bg-orangePrimary bg-yellow-400" : ""
               }`}
             htmlFor="android"
           >
             Mobile Apps
-          </label>
+          </label> */}
 
           <input
             className="hidden"

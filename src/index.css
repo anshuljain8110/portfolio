@@ -1,21 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-body * {
-    @apply transition-colors duration-300;
-}
-*{
-    cursor:url(../public/images/hand.png) 12 12 , auto;
-}
-a{
-    cursor:url(../public/images/hand.png) 12 12 , auto;
-}
-button{
-    cursor:url(../public/images/hand.png) 12 12 , auto;
-}
-label{
-    cursor:url(../public/images/hand.png) 12 12 , auto;
-}
-.bbttnn{
-    z-index: 10000 !important;
-}
+
+html, body, #root { min-height: 100%; }
+body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+button, a { cursor: pointer; }
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #08090d; }
+::-webkit-scrollbar-thumb { background: #343741; border-radius: 20px; border: 2px solid #08090d; }
+::-webkit-scrollbar-thumb:hover { background: #515560; }
